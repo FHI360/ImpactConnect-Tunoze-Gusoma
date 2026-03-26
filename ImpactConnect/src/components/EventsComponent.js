@@ -253,7 +253,7 @@ export const EventsComponent = () => {
                 }
             }).then(res => {
                 if (res && res.trainings) {
-                    setAllTrainings(res.trainings.instances);
+                    setAllTrainings(res.trainings.trackedEntities);
                 }
             })
         }
@@ -298,8 +298,8 @@ export const EventsComponent = () => {
     useEffect(() => {
         if (entityData) {
             if (entityData.entities) {
-                setAllEntities(entityData.entities.instances);
-                setEntities(entityData.entities.instances);
+                setAllEntities(entityData.entities.trackedEntities);
+                setEntities(entityData.entities.trackedEntities);
                 setTotalEntities(entityData.entities.total);
                 setSelectedEntities([])
             } else {
@@ -429,9 +429,9 @@ export const EventsComponent = () => {
     const fetchEventAndTrainings = () => {
         fetchEvents().then(eventData => {
             if (eventData && eventData.events) {
-                setEvents(eventData.events.instances);
+                setEvents(eventData.events.trackedEntities);
 
-                const trainings = new Set(eventData.events.instances.flatMap(i => {
+                const trainings = new Set(eventData.events.trackedEntities?.flatMap(i => {
                     return i.attributes.map(attr => {
                         attr['trackedEntity'] = i.trackedEntity;
                         return attr;
@@ -583,7 +583,7 @@ export const EventsComponent = () => {
                     setSelectedTraining('');
                     fetchEvents().then(eventData => {
                         if (eventData && eventData.events) {
-                            setEvents(eventData.events.instances);
+                            setEvents(eventData.events.trackedEntities);
                             setToggle((prev) => !prev);
                         }
                     });
@@ -592,7 +592,7 @@ export const EventsComponent = () => {
 
                 fetchEvents().then(eventData => {
                     if (eventData && eventData.events) {
-                        setEvents(eventData.events.instances);
+                        setEvents(eventData.events.trackedEntities);
                         setSelectedTraining(trackedEntity);
                     }
                 });
@@ -1280,7 +1280,7 @@ export const EventsComponent = () => {
                                                                                         setSelectedEntities([])
                                                                                     }
                                                                                 }}
-                                                                                checked={selectedEntities.length === entities.length}
+                                                                                checked={selectedEntities?.length === entities?.length}
                                                                                 className="checkbox"/>
                                                                         </div>
                                                                     </th>
@@ -1297,7 +1297,7 @@ export const EventsComponent = () => {
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                {entities.map((entity, index) => {
+                                                                {entities?.map((entity, index) => {
                                                                     return <>
                                                                         <tr className="pr-3 text-right odd:bg-white  even:bg-gray-50  border-b d">
                                                                             <td className="px-6 py-6">

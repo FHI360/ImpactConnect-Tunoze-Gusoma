@@ -213,7 +213,7 @@ export const Main = () => {
                 }
             }).then(res => {
                 if (res && res.trainings) {
-                    const filteredTrainings = res.trainings.instances.filter(training => {
+                    const filteredTrainings = res.trainings.trackedEntities.filter(training => {
                         const facilitatorMatches = training.attributes.some(attr => {
                             const facilitators = attr.attribute === EVENT_OPTIONS.attributes.facilitators && attr.value;
                             return facilitators && facilitators.split(',').includes(user);
@@ -267,24 +267,35 @@ export const Main = () => {
                 training: {
                     resource: `tracker/trackedEntities/${selectedTraining}`,
                     params: {
-                        fields: 'attributes,relationships(from(trackedEntity(trackedEntity)))',
+                        fields: 'trackedEntity,attributes,relationships(from(trackedEntity(trackedEntity)))',
                         program: trainingProgram
                     }
                 }
-            }).then(res => {
-                if (res && res.training) {
-                    setEventAttributes(res.training.attributes);
-                    const ids = res.training.relationships.map(rel => rel.from.trackedEntity.trackedEntity);
-                    if (ids.length > 0) {
-                        fetchEntities(engine, ids, '*').then(value => {
-                            const attendees = sortEntities(value.map(v => v.entity), nameAttributes);
-                            setAllEntities(attendees);
-                            setPage(1)
-                            setEntities(prev => [...attendees]);
+            }).then(async (res) => {
+	            if (res && res.training) {
+		            setEventAttributes(res.training.attributes);
 
-                            setLoading(false)
-                        });
-                    } else {
+		            const rels = await engine.query({
+			            relationships: {
+				            resource: `tracker/relationships`,
+				            params: {
+					            tei: res.training.trackedEntity,
+				            }
+			            }
+		            });
+
+		            const ids = rels.relationships.relationships.map(rel => rel.from.trackedEntity.trackedEntity);
+					console.log('IDs', ids);
+		            if (ids.length > 0) {
+			            fetchEntities(engine, ids, '*').then(value => {
+				            const attendees = sortEntities(value.map(v => v.entity), nameAttributes);
+				            setAllEntities(attendees);
+				            setPage(1)
+				            setEntities(prev => [...attendees]);
+
+				            setLoading(false)
+			            });
+		            } else {
                         setLoading(false);
                     }
 
