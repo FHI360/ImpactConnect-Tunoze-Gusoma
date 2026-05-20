@@ -25,8 +25,8 @@ const ProgramComponent = ({selectedProgram, setSelectedProgram, disabled, label}
     }
 
     const handleProgramChange = event => {
-        event.preventDefault();
-        setSelectedProgram(event.target.value);
+        //event.preventDefault();
+        setSelectedProgram(event.selected);
     };
 
     return (
