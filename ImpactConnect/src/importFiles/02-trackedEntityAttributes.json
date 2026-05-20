@@ -1,0 +1,148 @@
+{
+  "trackedEntityAttributes": [
+    {
+      "id": "CUW9TfQpAu6",
+      "name": "Start Date_for_demo",
+      "shortName": "Start Date",
+      "description": "Event start date",
+      "valueType": "DATE",
+      "aggregationType": "NONE",
+      "displayName": "Start Date_for_demo",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "KPwanQQE4FU",
+      "name": "End Date_for_demo",
+      "shortName": "End Date",
+      "description": "Event end date",
+      "valueType": "DATE",
+      "aggregationType": "NONE",
+      "displayName": "End Date_for_demo",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "G0Ab3IHVx6W",
+      "name": "Activity Type_for_demo",
+      "shortName": "Activity Type",
+      "description": "Type of activity (1=Training, 2=Workshop, 3=Meeting)",
+      "valueType": "INTEGER",
+      "aggregationType": "NONE",
+      "displayName": "Activity Type_for_demo",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "oIZRuzzHXxa",
+      "name": "Number of Days_for_demo",
+      "shortName": "Days",
+      "description": "Number of days for the event",
+      "valueType": "INTEGER_POSITIVE",
+      "aggregationType": "NONE",
+      "displayName": "Number of Days_for_demo",
+      "unique": false,
+      "mandatory": false,
+      "searchable": false,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "CJ7g6K9Ukvf",
+      "name": "Event Name_for_demo",
+      "shortName": "Event Name",
+      "description": "Name of the event",
+      "valueType": "TEXT",
+      "aggregationType": "NONE",
+      "displayName": "Event Name_for_demo",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "WSOC4pHc34X",
+      "name": "Facilitators_for_demo",
+      "shortName": "Facilitators",
+      "description": "List of facilitators for the event",
+      "valueType": "TEXT",
+      "aggregationType": "NONE",
+      "displayName": "Facilitators_for_demo",
+      "unique": false,
+      "mandatory": false,
+      "searchable": false,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "rlCta8FG2fz",
+      "name": "Unique Name_for_demo",
+      "shortName": "Unique Name",
+      "description": "Unique identifier for the event",
+      "valueType": "TEXT",
+      "aggregationType": "NONE",
+      "displayName": "Unique Name_for_demo",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "f1rstn4m3x1",
+      "name": "First Name_for_demo",
+      "shortName": "First Name_for_demo",
+      "description": "First name of the participant",
+      "valueType": "TEXT",
+      "aggregationType": "NONE",
+      "displayName": "First Name_for_demo",
+      "unique": false,
+      "mandatory": true,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "l4stn4m3x2y",
+      "name": "Last Name_for_demo",
+      "shortName": "Last Name_for_demo",
+      "description": "Last name of the participant",
+      "valueType": "TEXT",
+      "aggregationType": "NONE",
+      "displayName": "Last Name_for_demo",
+      "unique": false,
+      "mandatory": true,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    }
+  ]
+}

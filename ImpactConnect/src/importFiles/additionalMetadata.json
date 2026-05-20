@@ -1,0 +1,203 @@
+{
+  "organisationUnitGroups": [
+    {
+      "id": "k4p9x2m8q1z",
+      "name": "Schools",
+      "shortName": "Schools",
+      "description": "Organization unit group for schools",
+      "displayName": "Schools",
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "v7m2q9x1p4k",
+      "name": "Training/Meeting/Workshop Venues",
+      "shortName": "Venues",
+      "description": "Organization unit group for training, meeting, and workshop venues",
+      "displayName": "Training/Meeting/Workshop Venues",
+      "access": {
+        "read": true,
+        "write": true
+      }
+    }
+  ],
+  "userGroups": [
+    {
+      "id": "m8q1p4x7z2k",
+      "name": "MEL Team",
+      "displayName": "MEL Team",
+      "description": "User group for Monitoring, Evaluation, and Learning team members",
+      "access": {
+        "read": true,
+        "write": true,
+        "manage": true
+      }
+    },
+    {
+      "id": "f2x9k7m4p1q",
+      "name": "Facilitators",
+      "displayName": "Facilitators",
+      "description": "User group for event facilitators",
+      "access": {
+        "read": true,
+        "write": true,
+        "manage": true
+      }
+    },
+    {
+      "id": "i9p4k7x2m1q",
+      "name": "ImpactConnectAdmins",
+      "displayName": "ImpactConnect Admins",
+      "description": "User group for ImpactConnect application administrators",
+      "access": {
+        "read": true,
+        "write": true,
+        "manage": true
+      }
+    }
+  ],
+  "trackedEntityTypes": [
+    {
+      "id": "e7k2m9p4x1q",
+      "name": "Event",
+      "shortName": "Event",
+      "description": "Tracked entity type for events (training, workshop, meeting)",
+      "displayName": "Event",
+      "minAttributesRequiredToSearch": 1,
+      "maxTeiCountToReturn": 0,
+      "allowAuditLog": false,
+      "access": {
+        "read": true,
+        "write": true,
+        "data": {
+          "read": true,
+          "write": true
+        }
+      }
+    },
+    {
+      "id": "p4x1q7k2m9z",
+      "name": "Participant",
+      "shortName": "Participant",
+      "description": "Tracked entity type for event participants",
+      "displayName": "Participant",
+      "minAttributesRequiredToSearch": 1,
+      "maxTeiCountToReturn": 0,
+      "allowAuditLog": false,
+      "access": {
+        "read": true,
+        "write": true,
+        "data": {
+          "read": true,
+          "write": true
+        }
+      }
+    }
+  ],
+  "trackedEntityAttributes": [
+    {
+      "id": "ls0TZ2qIQY4",
+      "name": "Phone Number",
+      "shortName": "Phone",
+      "description": "Phone number of the participant",
+      "valueType": "PHONE_NUMBER",
+      "aggregationType": "NONE",
+      "displayName": "Phone Number",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "GT99Xd3kyVN",
+      "name": "Position",
+      "shortName": "Position",
+      "description": "Position or role of the participant",
+      "valueType": "TEXT",
+      "aggregationType": "NONE",
+      "displayName": "Position",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    },
+    {
+      "id": "Bj48LXj8FmH",
+      "name": "ID Number",
+      "shortName": "ID Number",
+      "description": "Identification number of the participant",
+      "valueType": "TEXT",
+      "aggregationType": "NONE",
+      "displayName": "ID Number",
+      "unique": false,
+      "mandatory": false,
+      "searchable": true,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    }
+  ],
+
+  "optionSets": [
+    {
+      "id": "g1k9x4p7m2q",
+      "name": "Gender_for_demo",
+      "valueType": "TEXT",
+      "displayName": "Gender_for_demo",
+      "access": {
+        "read": true,
+        "write": true
+      }
+    }
+  ],
+
+  "options": [
+    {
+      "id": "g7m2k9x1p4q",
+      "code": "1",
+      "name": "Male",
+      "displayName": "Male",
+      "optionSet": { "id": "g1k9x4p7m2q" }
+    },
+    {
+      "id": "g9x1p4k7m2q",
+      "code": "2",
+      "name": "Female",
+      "displayName": "Female",
+      "optionSet": { "id": "g1k9x4p7m2q" }
+    }
+  ],
+
+  "relationshipTypes": [
+    {
+      "id": "iBFMyo4S0Nn",
+      "name": "Event Participant",
+      "shortName": "Event Participant",
+      "displayName": "Event Participant",
+      "fromToName": "Participant to Event",
+      "description": "Relationship between event and participant",
+      "fromConstraint": {
+        "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+        "trackedEntityType": { "id": "b7F2kLm9Qp1" }
+      },
+      "toConstraint": {
+        "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+        "trackedEntityType": { "id": "n4T8xQ2LmP0" }
+      },
+      "bidirectional": false,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    }
+  ]
+}

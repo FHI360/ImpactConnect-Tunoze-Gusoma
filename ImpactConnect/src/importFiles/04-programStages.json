@@ -1,0 +1,442 @@
+{
+  "programStages": [
+    {
+      "id": "SmUprI011oN",
+      "name": "Training",
+      "shortName": "Training",
+      "description": "Training event stage",
+      "displayName": "Training",
+      "repeatable": false,
+      "programStageDataElements": [
+        {
+          "dataElement": {
+            "id": "uaQMciOOeWp"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "ydubZaoEeMy"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "UfMZ6XN7PS7"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "e0RUQ4dgkgL"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "PkzWUbbUvZJ"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "UXOKSlNdcCE"
+          },
+          "compulsory": false,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "nr2KeppSpJu"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "xC0qvYXW3kB"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "NOA57B7ry6m"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "wnlNJ6YXPEB"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "wiy7OJe82vw"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "Zl2C1J82Iko"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "swP5ko96SyC"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "pb3dozumaA9"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "nz0xDT9pdgw"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "SdP4s8SRDX1"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "aX5CYDBVHBF"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        }
+      ]
+    },
+    {
+      "id": "rPMeg1cK9Pu",
+      "name": "Workshop",
+      "shortName": "Workshop",
+      "description": "Workshop event stage",
+      "displayName": "Workshop",
+      "repeatable": false,
+      "programStageDataElements": [
+        {
+          "dataElement": {
+            "id": "ihlx9umjUrk"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "MD17WLZCEUc"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "PUvwjqxunXb"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "a7zycuo6jJL"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "V6NrrxNfZIQ"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "kXSUG9Aortq"
+          },
+          "compulsory": false,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "HzFrujoVvp4"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "wvJiMvzGI6D"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "DNHZpZ90ABq"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "UL0yoJHUOWM"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "p1YAn2bS73C"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "rHhNj1yzeJy"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "nlgSqr5SWO8"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "lA28WkTREhj"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "RsJHkrx1Kix"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "e62s5XIxZ8Z"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "cxjrWicpNUA"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        }
+      ]
+    },
+    {
+      "id": "jMKha9exruT",
+      "name": "Meeting",
+      "shortName": "Meeting",
+      "description": "Meeting event stage",
+      "displayName": "Meeting",
+      "repeatable": false,
+      "programStageDataElements": [
+        {
+          "dataElement": {
+            "id": "Hv7qEISyGje"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "vIIrVbFoWmO"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "QGsrhVuN3sC"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "ZmZy7A1Gfmc"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "TORvO3CI2l1"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "iXQ6CnBP0Qi"
+          },
+          "compulsory": false,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "rMxu6V1U2oZ"
+          },
+          "compulsory": true,
+          "displayInReports": true,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "h4fqkmMaXTF"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "jmaZu41ixHK"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "CySpWjKo9K6"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "MtlQTkOeNM8"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "z8lxVSkcqbo"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "zMrF9rXtGlq"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "NUJP6crsVnU"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "JRwbsqHB9du"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "PnHYe0lQsXF"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        },
+        {
+          "dataElement": {
+            "id": "ENpSRYFyYWe"
+          },
+          "compulsory": false,
+          "displayInReports": false,
+          "allowProvidedElsewhere": false
+        }
+      ]
+    }
+  ]
+}

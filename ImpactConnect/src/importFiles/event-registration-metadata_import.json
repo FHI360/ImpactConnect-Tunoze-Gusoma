@@ -1,0 +1,1059 @@
+{
+    "programs": [
+      {
+        "id": "a8K3mP2xQ7L",
+        "name": "Event Registration_for_demo",
+        "shortName": "Event Registration",
+        "description": "Program for registering training, workshop, and meeting events",
+        "programType": "WITH_REGISTRATION",
+        "displayName": "Event Registration_for_demo",
+        "access": {
+          "read": true,
+          "write": true,
+          "data": {
+            "read": true,
+            "write": true
+          }
+        },
+        "programTrackedEntityAttributes": [
+          {
+            "trackedEntityAttribute": {
+              "id": "CUW9TfQpAu6",
+              "name": "Start Date_for_demo",
+              "shortName": "Start Date",
+              "description": "Event start date",
+              "valueType": "DATE",
+              "displayName": "Start Date_for_demo",
+              "access": { "read": true, "write": true }
+            },
+            "mandatory": true,
+            "displayInList": true,
+            "searchable": true
+          },
+          {
+            "trackedEntityAttribute": {
+              "id": "KPwanQQE4FU",
+              "name": "End Date_for_demo",
+              "shortName": "End Date",
+              "description": "Event end date",
+              "valueType": "DATE",
+              "displayName": "End Date_for_demo",
+              "access": { "read": true, "write": true }
+            },
+            "mandatory": true,
+            "displayInList": true,
+            "searchable": true
+          },
+          {
+            "trackedEntityAttribute": {
+              "id": "G0Ab3IHVx6W",
+              "name": "Activity Type_for_demo",
+              "shortName": "Activity Type",
+              "description": "Type of activity (1=Training, 2=Workshop, 3=Meeting)",
+              "valueType": "INTEGER",
+              "displayName": "Activity Type_for_demo",
+              "access": { "read": true, "write": true }
+            },
+            "mandatory": true,
+            "displayInList": true,
+            "searchable": true
+          },
+          {
+            "trackedEntityAttribute": {
+              "id": "oIZRuzzHXxa",
+              "name": "Number of Days_for_demo",
+              "shortName": "Days",
+              "description": "Number of days for the event",
+              "valueType": "INTEGER_POSITIVE",
+              "displayName": "Number of Days_for_demo",
+              "access": { "read": true, "write": true }
+            },
+            "mandatory": false,
+            "displayInList": false,
+            "searchable": false
+          },
+          {
+            "trackedEntityAttribute": {
+              "id": "CJ7g6K9Ukvf",
+              "name": "Event Name_for_demo",
+              "shortName": "Event Name",
+              "description": "Name of the event",
+              "valueType": "TEXT",
+              "displayName": "Event Name_for_demo",
+              "access": { "read": true, "write": true }
+            },
+            "mandatory": true,
+            "displayInList": true,
+            "searchable": true
+          },
+          {
+            "trackedEntityAttribute": {
+              "id": "WSOC4pHc34X",
+              "name": "Facilitators_for_demo",
+              "shortName": "Facilitators",
+              "description": "List of facilitators for the event",
+              "valueType": "TEXT",
+              "displayName": "Facilitators_for_demo",
+              "access": { "read": true, "write": true }
+            },
+            "mandatory": true,
+            "displayInList": false,
+            "searchable": false
+          },
+          {
+            "trackedEntityAttribute": {
+              "id": "rlCta8FG2fz",
+              "name": "Unique Name_for_demo",
+              "shortName": "Unique Name",
+              "description": "Unique identifier for the event",
+              "valueType": "TEXT",
+              "displayName": "Unique Name_for_demo",
+              "access": { "read": true, "write": true }
+            },
+            "mandatory": false,
+            "displayInList": false,
+            "searchable": true
+          }
+        ],
+  
+        "programStages": [
+            {
+              "id": "SmUprI011oN",
+              "name": "Training",
+              "shortName": "Training",
+              "description": "Training event stage",
+              "displayName": "Training",
+              "repeatable": false,
+              "programStageDataElements": [
+                {
+                  "dataElement": {
+                    "id": "uaQMciOOeWp",
+                    "name": "Training Start Date",
+                    "shortName": "Training Start Date",
+                    "description": "Start date for training event",
+                    "valueType": "DATE",
+                    "displayName": "Training Start Date",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "ydubZaoEeMy",
+                    "name": "Training End Date",
+                    "shortName": "Training End Date",
+                    "description": "End date for training event",
+                    "valueType": "DATE",
+                    "displayName": "Training End Date",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "UfMZ6XN7PS7",
+                    "name": "Training Event Name",
+                    "shortName": "Training Event Name",
+                    "description": "Name of the training event",
+                    "valueType": "TEXT",
+                    "displayName": "Training Event Name",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "e0RUQ4dgkgL",
+                    "name": "Training Unique Name",
+                    "shortName": "Training Unique Name",
+                    "description": "Unique identifier for training event",
+                    "valueType": "TEXT",
+                    "displayName": "Training Unique Name",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "PkzWUbbUvZJ",
+                    "name": "Training USG Support",
+                    "shortName": "Training USG Support",
+                    "description": "USG support for training",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training USG Support",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "UXOKSlNdcCE",
+                    "name": "Training Number of Days",
+                    "shortName": "Training Days",
+                    "description": "Number of days for training",
+                    "valueType": "INTEGER_POSITIVE",
+                    "displayName": "Training Number of Days",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "nr2KeppSpJu",
+                    "name": "Training Venue",
+                    "shortName": "Training Venue",
+                    "description": "Venue for training event",
+                    "valueType": "ORGANISATION_UNIT",
+                    "displayName": "Training Venue",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "xC0qvYXW3kB",
+                    "name": "Training Day 1",
+                    "shortName": "Training Day 1",
+                    "description": "Training day 1",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 1",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "NOA57B7ry6m",
+                    "name": "Training Day 2",
+                    "shortName": "Training Day 2",
+                    "description": "Training day 2",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 2",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "wnlNJ6YXPEB",
+                    "name": "Training Day 3",
+                    "shortName": "Training Day 3",
+                    "description": "Training day 3",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 3",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "wiy7OJe82vw",
+                    "name": "Training Day 4",
+                    "shortName": "Training Day 4",
+                    "description": "Training day 4",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 4",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "Zl2C1J82Iko",
+                    "name": "Training Day 5",
+                    "shortName": "Training Day 5",
+                    "description": "Training day 5",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 5",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "swP5ko96SyC",
+                    "name": "Training Day 6",
+                    "shortName": "Training Day 6",
+                    "description": "Training day 6",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 6",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "pb3dozumaA9",
+                    "name": "Training Day 7",
+                    "shortName": "Training Day 7",
+                    "description": "Training day 7",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 7",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "nz0xDT9pdgw",
+                    "name": "Training Day 8",
+                    "shortName": "Training Day 8",
+                    "description": "Training day 8",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 8",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "SdP4s8SRDX1",
+                    "name": "Training Day 9",
+                    "shortName": "Training Day 9",
+                    "description": "Training day 9",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 9",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "aX5CYDBVHBF",
+                    "name": "Training Day 10",
+                    "shortName": "Training Day 10",
+                    "description": "Training day 10",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Training Day 10",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                }
+              ]
+            },
+            {
+              "id": "rPMeg1cK9Pu",
+              "name": "Workshop",
+              "shortName": "Workshop",
+              "description": "Workshop event stage",
+              "displayName": "Workshop",
+              "repeatable": false,
+              "programStageDataElements": [
+                {
+                  "dataElement": {
+                    "id": "ihlx9umjUrk",
+                    "name": "Workshop Start Date",
+                    "shortName": "Workshop Start Date",
+                    "description": "Start date for workshop event",
+                    "valueType": "DATE",
+                    "displayName": "Workshop Start Date",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "MD17WLZCEUc",
+                    "name": "Workshop End Date",
+                    "shortName": "Workshop End Date",
+                    "description": "End date for workshop event",
+                    "valueType": "DATE",
+                    "displayName": "Workshop End Date",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "PUvwjqxunXb",
+                    "name": "Workshop Event Name",
+                    "shortName": "Workshop Event Name",
+                    "description": "Name of the workshop event",
+                    "valueType": "TEXT",
+                    "displayName": "Workshop Event Name",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "a7zycuo6jJL",
+                    "name": "Workshop Unique Name",
+                    "shortName": "Workshop Unique Name",
+                    "description": "Unique identifier for workshop event",
+                    "valueType": "TEXT",
+                    "displayName": "Workshop Unique Name",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "V6NrrxNfZIQ",
+                    "name": "Workshop USG Support",
+                    "shortName": "Workshop USG Support",
+                    "description": "USG support for workshop",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop USG Support",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "kXSUG9Aortq",
+                    "name": "Workshop Number of Days",
+                    "shortName": "Workshop Days",
+                    "description": "Number of days for workshop",
+                    "valueType": "INTEGER_POSITIVE",
+                    "displayName": "Workshop Number of Days",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "HzFrujoVvp4",
+                    "name": "Workshop Venue",
+                    "shortName": "Workshop Venue",
+                    "description": "Venue for workshop event",
+                    "valueType": "ORGANISATION_UNIT",
+                    "displayName": "Workshop Venue",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "wvJiMvzGI6D",
+                    "name": "Workshop Day 1",
+                    "shortName": "Workshop Day 1",
+                    "description": "Workshop day 1",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 1",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "DNHZpZ90ABq",
+                    "name": "Workshop Day 2",
+                    "shortName": "Workshop Day 2",
+                    "description": "Workshop day 2",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 2",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "UL0yoJHUOWM",
+                    "name": "Workshop Day 3",
+                    "shortName": "Workshop Day 3",
+                    "description": "Workshop day 3",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 3",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "p1YAn2bS73C",
+                    "name": "Workshop Day 4",
+                    "shortName": "Workshop Day 4",
+                    "description": "Workshop day 4",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 4",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "rHhNj1yzeJy",
+                    "name": "Workshop Day 5",
+                    "shortName": "Workshop Day 5",
+                    "description": "Workshop day 5",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 5",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "nlgSqr5SWO8",
+                    "name": "Workshop Day 6",
+                    "shortName": "Workshop Day 6",
+                    "description": "Workshop day 6",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 6",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "lA28WkTREhj",
+                    "name": "Workshop Day 7",
+                    "shortName": "Workshop Day 7",
+                    "description": "Workshop day 7",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 7",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "RsJHkrx1Kix",
+                    "name": "Workshop Day 8",
+                    "shortName": "Workshop Day 8",
+                    "description": "Workshop day 8",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 8",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "e62s5XIxZ8Z",
+                    "name": "Workshop Day 9",
+                    "shortName": "Workshop Day 9",
+                    "description": "Workshop day 9",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 9",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "cxjrWicpNUA",
+                    "name": "Workshop Day 10",
+                    "shortName": "Workshop Day 10",
+                    "description": "Workshop day 10",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Workshop Day 10",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                }
+              ]
+            },
+            {
+              "id": "jMKha9exruT",
+              "name": "Meeting",
+              "shortName": "Meeting",
+              "description": "Meeting event stage",
+              "displayName": "Meeting",
+              "repeatable": false,
+              "programStageDataElements": [
+                {
+                  "dataElement": {
+                    "id": "Hv7qEISyGje",
+                    "name": "Meeting Start Date",
+                    "shortName": "Meeting Start Date",
+                    "description": "Start date for meeting event",
+                    "valueType": "DATE",
+                    "displayName": "Meeting Start Date",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "vIIrVbFoWmO",
+                    "name": "Meeting End Date",
+                    "shortName": "Meeting End Date",
+                    "description": "End date for meeting event",
+                    "valueType": "DATE",
+                    "displayName": "Meeting End Date",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "QGsrhVuN3sC",
+                    "name": "Meeting Event Name",
+                    "shortName": "Meeting Event Name",
+                    "description": "Name of the meeting event",
+                    "valueType": "TEXT",
+                    "displayName": "Meeting Event Name",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "ZmZy7A1Gfmc",
+                    "name": "Meeting Unique Name",
+                    "shortName": "Meeting Unique Name",
+                    "description": "Unique identifier for meeting event",
+                    "valueType": "TEXT",
+                    "displayName": "Meeting Unique Name",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "TORvO3CI2l1",
+                    "name": "Meeting USG Support",
+                    "shortName": "Meeting USG Support",
+                    "description": "USG support for meeting",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting USG Support",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "iXQ6CnBP0Qi",
+                    "name": "Meeting Number of Days",
+                    "shortName": "Meeting Days",
+                    "description": "Number of days for meeting",
+                    "valueType": "INTEGER_POSITIVE",
+                    "displayName": "Meeting Number of Days",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "rMxu6V1U2oZ",
+                    "name": "Meeting Venue",
+                    "shortName": "Meeting Venue",
+                    "description": "Venue for meeting event",
+                    "valueType": "ORGANISATION_UNIT",
+                    "displayName": "Meeting Venue",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": true,
+                  "displayInReports": true,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "h4fqkmMaXTF",
+                    "name": "Meeting Day 1",
+                    "shortName": "Meeting Day 1",
+                    "description": "Meeting day 1",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 1",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "jmaZu41ixHK",
+                    "name": "Meeting Day 2",
+                    "shortName": "Meeting Day 2",
+                    "description": "Meeting day 2",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 2",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "CySpWjKo9K6",
+                    "name": "Meeting Day 3",
+                    "shortName": "Meeting Day 3",
+                    "description": "Meeting day 3",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 3",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "MtlQTkOeNM8",
+                    "name": "Meeting Day 4",
+                    "shortName": "Meeting Day 4",
+                    "description": "Meeting day 4",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 4",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "z8lxVSkcqbo",
+                    "name": "Meeting Day 5",
+                    "shortName": "Meeting Day 5",
+                    "description": "Meeting day 5",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 5",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "zMrF9rXtGlq",
+                    "name": "Meeting Day 6",
+                    "shortName": "Meeting Day 6",
+                    "description": "Meeting day 6",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 6",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "NUJP6crsVnU",
+                    "name": "Meeting Day 7",
+                    "shortName": "Meeting Day 7",
+                    "description": "Meeting day 7",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 7",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "JRwbsqHB9du",
+                    "name": "Meeting Day 8",
+                    "shortName": "Meeting Day 8",
+                    "description": "Meeting day 8",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 8",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "PnHYe0lQsXF",
+                    "name": "Meeting Day 9",
+                    "shortName": "Meeting Day 9",
+                    "description": "Meeting day 9",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 9",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                },
+                {
+                  "dataElement": {
+                    "id": "ENpSRYFyYWe",
+                    "name": "Meeting Day 10",
+                    "shortName": "Meeting Day 10",
+                    "description": "Meeting day 10",
+                    "valueType": "TRUE_ONLY",
+                    "displayName": "Meeting Day 10",
+                    "access": {
+                      "read": true,
+                      "write": true
+                    }
+                  },
+                  "compulsory": false,
+                  "displayInReports": false,
+                  "allowProvidedElsewhere": false
+                }
+              ]
+            }
+          ],
+        "trackedEntityType": {
+          "id": "b7F2kLm9Qp1",
+          "name": "Event_for_demo",
+          "shortName": "Event",
+          "description": "Tracked entity type for events",
+          "displayName": "Event_for_demo"
+        },
+  
+        "relationshipTypes": [
+          {
+            "id": "iBFMyo4S0Nn",
+            "name": "Event Participant_for_demo",
+            "shortName": "Event Participant",
+            "description": "Relationship between event and participant",
+            "displayName": "Event Participant_for_demo",
+            "fromConstraint": {
+              "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+              "trackedEntityType": {
+                "id": "n4T8xQ2LmP0",
+                "name": "Participant_for_demo",
+                "shortName": "Participant",
+                "description": "Tracked entity type for participants",
+                "displayName": "Participant_for_demo"
+              }
+            },
+            "toConstraint": {
+              "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+              "trackedEntityType": {
+                "id": "b7F2kLm9Qp1",
+                "name": "Event_for_demo",
+                "shortName": "Event",
+                "description": "Tracked entity type for events",
+                "displayName": "Event_for_demo"
+              }
+            },
+            "bidirectional": false
+          }
+        ]
+      }
+    ]
+  }
+  

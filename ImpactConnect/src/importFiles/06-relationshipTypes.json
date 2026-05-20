@@ -1,0 +1,28 @@
+{
+  "relationshipTypes": [
+    {
+      "id": "iBFMyo4S0Nn",
+      "name": "Event Participant_for_demo",
+      "shortName": "Event Participant",
+      "description": "Relationship between event and participant",
+      "displayName": "Event Participant_for_demo",
+      "fromConstraint": {
+        "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+        "trackedEntityType": {
+          "id": "n4T8xQ2LmP0"
+        }
+      },
+      "toConstraint": {
+        "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+        "trackedEntityType": {
+          "id": "b7F2kLm9Qp1"
+        }
+      },
+      "bidirectional": false,
+      "access": {
+        "read": true,
+        "write": true
+      }
+    }
+  ]
+}

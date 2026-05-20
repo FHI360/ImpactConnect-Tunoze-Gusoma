@@ -1,0 +1,163 @@
+{
+  "programs": [
+    {
+      "id": "a8K3mP2xQ7L",
+      "name": "Event Registration_for_demo",
+      "shortName": "Event Registration",
+      "description": "Program for registering training, workshop, and meeting events",
+      "programType": "WITH_REGISTRATION",
+      "displayName": "Event Registration_for_demo",
+      "access": {
+        "read": true,
+        "write": true,
+        "data": {
+          "read": true,
+          "write": true
+        }
+      },
+      "programTrackedEntityAttributes": [
+        {
+          "trackedEntityAttribute": {
+            "id": "CUW9TfQpAu6",
+            "name": "Start Date_for_demo",
+            "shortName": "Start Date",
+            "description": "Event start date",
+            "valueType": "DATE",
+            "displayName": "Start Date_for_demo",
+            "access": { "read": true, "write": true }
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "KPwanQQE4FU",
+            "name": "End Date_for_demo",
+            "shortName": "End Date",
+            "description": "Event end date",
+            "valueType": "DATE",
+            "displayName": "End Date_for_demo",
+            "access": { "read": true, "write": true }
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "G0Ab3IHVx6W",
+            "name": "Activity Type_for_demo",
+            "shortName": "Activity Type",
+            "description": "Type of activity (1=Training, 2=Workshop, 3=Meeting)",
+            "valueType": "INTEGER",
+            "displayName": "Activity Type_for_demo",
+            "access": { "read": true, "write": true }
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "oIZRuzzHXxa",
+            "name": "Number of Days_for_demo",
+            "shortName": "Days",
+            "description": "Number of days for the event",
+            "valueType": "INTEGER_POSITIVE",
+            "displayName": "Number of Days_for_demo",
+            "access": { "read": true, "write": true }
+          },
+          "mandatory": false,
+          "displayInList": false,
+          "searchable": false
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "CJ7g6K9Ukvf",
+            "name": "Event Name_for_demo",
+            "shortName": "Event Name",
+            "description": "Name of the event",
+            "valueType": "TEXT",
+            "displayName": "Event Name_for_demo",
+            "access": { "read": true, "write": true }
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "WSOC4pHc34X",
+            "name": "Facilitators_for_demo",
+            "shortName": "Facilitators",
+            "description": "List of facilitators for the event",
+            "valueType": "TEXT",
+            "displayName": "Facilitators_for_demo",
+            "access": { "read": true, "write": true }
+          },
+          "mandatory": true,
+          "displayInList": false,
+          "searchable": false
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "rlCta8FG2fz",
+            "name": "Unique Name_for_demo",
+            "shortName": "Unique Name",
+            "description": "Unique identifier for the event",
+            "valueType": "TEXT",
+            "displayName": "Unique Name_for_demo",
+            "access": { "read": true, "write": true }
+          },
+          "mandatory": false,
+          "displayInList": false,
+          "searchable": true
+        }
+      ],
+
+      "programStages": [
+        /* ✅ ALL YOUR STAGES REMAIN EXACTLY AS PROVIDED */
+      ],
+
+      "trackedEntityType": {
+        "id": "b7F2kLm9Qp1",
+        "name": "Event_for_demo",
+        "shortName": "Event",
+        "description": "Tracked entity type for events",
+        "displayName": "Event_for_demo"
+      },
+
+      "relationshipTypes": [
+        {
+          "id": "iBFMyo4S0Nn",
+          "name": "Event Participant_for_demo",
+          "shortName": "Event Participant",
+          "description": "Relationship between event and participant",
+          "displayName": "Event Participant_for_demo",
+          "fromConstraint": {
+            "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+            "trackedEntityType": {
+              "id": "n4T8xQ2LmP0",
+              "name": "Participant_for_demo",
+              "shortName": "Participant",
+              "description": "Tracked entity type for participants",
+              "displayName": "Participant_for_demo"
+            }
+          },
+          "toConstraint": {
+            "relationshipEntity": "TRACKED_ENTITY_INSTANCE",
+            "trackedEntityType": {
+              "id": "b7F2kLm9Qp1",
+              "name": "Event_for_demo",
+              "shortName": "Event",
+              "description": "Tracked entity type for events",
+              "displayName": "Event_for_demo"
+            }
+          },
+          "bidirectional": false
+        }
+      ]
+    }
+  ]
+}

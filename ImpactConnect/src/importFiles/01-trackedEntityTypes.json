@@ -1,0 +1,40 @@
+{
+  "trackedEntityTypes": [
+    {
+      "id": "b7F2kLm9Qp1",
+      "name": "Event_for_demo",
+      "shortName": "Event",
+      "description": "Tracked entity type for events",
+      "displayName": "Event_for_demo",
+      "minAttributesRequiredToSearch": 1,
+      "maxTeiCountToReturn": 0,
+      "allowAuditLog": false,
+      "access": {
+        "read": true,
+        "write": true,
+        "data": {
+          "read": true,
+          "write": true
+        }
+      }
+    },
+    {
+      "id": "n4T8xQ2LmP0",
+      "name": "Participant_for_demo",
+      "shortName": "Participant",
+      "description": "Tracked entity type for participants",
+      "displayName": "Participant_for_demo",
+      "minAttributesRequiredToSearch": 1,
+      "maxTeiCountToReturn": 0,
+      "allowAuditLog": false,
+      "access": {
+        "read": true,
+        "write": true,
+        "data": {
+          "read": true,
+          "write": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "programs": [
+    {
+      "id": "a8K3mP2xQ7L",
+      "name": "Event Registration_for_demo",
+      "shortName": "Event Registration",
+      "description": "Program for registering training, workshop, and meeting events",
+      "programType": "WITH_REGISTRATION",
+      "displayName": "Event Registration_for_demo",
+      "access": {
+        "read": true,
+        "write": true,
+        "data": {
+          "read": true,
+          "write": true
+        }
+      },
+      "programTrackedEntityAttributes": [
+        {
+          "trackedEntityAttribute": {
+            "id": "CUW9TfQpAu6"
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "KPwanQQE4FU"
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "G0Ab3IHVx6W"
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "oIZRuzzHXxa"
+          },
+          "mandatory": false,
+          "displayInList": false,
+          "searchable": false
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "CJ7g6K9Ukvf"
+          },
+          "mandatory": true,
+          "displayInList": true,
+          "searchable": true
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "WSOC4pHc34X"
+          },
+          "mandatory": true,
+          "displayInList": false,
+          "searchable": false
+        },
+        {
+          "trackedEntityAttribute": {
+            "id": "rlCta8FG2fz"
+          },
+          "mandatory": false,
+          "displayInList": false,
+          "searchable": true
+        }
+      ],
+      "programStages": [
+        {
+          "id": "SmUprI011oN"
+        },
+        {
+          "id": "rPMeg1cK9Pu"
+        },
+        {
+          "id": "jMKha9exruT"
+        }
+      ],
+      "trackedEntityType": {
+        "id": "b7F2kLm9Qp1"
+      }
+    }
+  ]
+  
+}
